@@ -1,0 +1,22 @@
+*{
+    background-color: rgb(15, 0, 0);
+}
+body{
+    color: rgb(211, 206, 232);
+}
+header{
+   background-color: bisque;
+    height:150px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+   
+}
+header:hover{
+    background-color: black;
+    color: chocolate;
+}
+main{
+   padding-top: 16vh;
+}

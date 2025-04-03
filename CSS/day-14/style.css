@@ -1,0 +1,57 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ body{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    padding: 5rem;
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    /* grid-template-columns:200px 200px 200px;
+    grid-template-rows: 200px 200px 200px ; */ 
+
+
+    /* fraction*/
+    grid-template-columns: 1fr 1fr 1fr ;
+    /* grid-template-rows: 1fr 1fr ;   number of  rows mention na hi karna accha  hota hai q ki by default ham jitna v 
+    row bnayenge sabke  liye same height wo le leta hai  agar hamlog ko specific height ka rows bnana hai to hi hamlog ko 
+    rows ka size aur number of rows mention karna chahiye  */
+    /* row-gap: 2rem;
+    column-gap: 2rem; */
+    gap:2rem;
+
+}
+.box{
+    background-color: red;
+    border:  1rem solid black;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-size: 3rem;
+}
+.header,.footer {
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+    /* above both line can  be written in single line  grid-column:1/4 where 1 is start and 4 is end  */ 
+    grid-column: 1/4;
+}
+.sidebar{
+    /* grid-row-start: 2;
+    grid-row-end:4; */
+    /* the above both line can be written in one line  */
+    grid-row: 2/4;
+}
+
+.content1{
+    grid-column: 2/4;
+
+}

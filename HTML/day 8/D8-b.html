@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+    
+           <legend>IIT jEE Registation form </legend>
+    
+            <!-- Full Name -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="fname" placeholder="Enter your name " required>
+            <br>
+            <br>
+    
+    
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Email_id" placeholder="xyz@gemail.com" required>
+            <br>
+            <br>
+    
+            <!-- Phone Number -->
+            <label for="contact">Phone:</label>
+            <input type="tel" id="contact" name="Contact_no" placeholder=" " required>
+            <br>
+            <br>
+    
+    
+            <!-- Password -->
+            <label for="pas">Password:</label>
+            <input type="password" id="pas" name="password" placeholder=" " required>
+            <br>
+            <br>
+    
+            <!-- Gender -->
+            <label>Gender:</label>
+    
+            <!-- Male -->
+            <input type="radio" id="male" name="Gender" value="male"  required>
+            <label for="male">Male</label>
+    
+            <!-- female -->
+            <input type="radio" id="female" name="Gender" value="female" required>
+            <label for="female">Female</label>
+    
+            <!-- Other -->
+            <input type="radio" id="Other" name="Gender" value="other" required>
+            <label for="Other">Other</label>
+            <br>
+            <br>
+    
+            <!-- Date of Birth -->
+            <label for="DOB">Date of Birth:</label>
+            <input type="date" id="DOB" min="2000-01-01" max="2005-12-31" required>
+            <br>
+            <br>
+    
+            <!-- School -->
+            <Label for="School">School Name:</Label>
+            <input type="text" id="School" name="School_name" required>
+            <br>
+            <br>
+    
+            <!-- Board -->
+            <label for="Board">Board:</label>
+            <select id="Board" required>
+                <option disabled selected>Select your board</option>
+                <option value="JAC">JAC</option>
+                <option value="CBSC">CBSC</option>
+                <option value="ISCS">ICSc</option>
+            </select>
+            <br>
+            <br>
+    
+            <!-- Passing Year -->
+            <label for="year">Year of Passing:</label>
+            <input type="number" required min="2023" max="2025">
+            <br>
+            <br>
+    
+            <!-- Exam Centre -->
+            <label>Exam Centre:</label>
+            <select id="" required>
+                <option value="Ranchi">Ranchi</option>
+                <option value="Bihar ">Bihar</option>
+                <option value="Odisha">Odisha</option>
+            </select>
+    
+    <br><br>
+            <button>Register</button>
+        </fieldset>
+    
+    </form>
+</body>
+</html>

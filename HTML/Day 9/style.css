@@ -1,0 +1,13 @@
+header{
+    background-color: rgb(192, 91, 91);
+   
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    
+   
+}
+main{
+    padding-top: 20vh;
+}

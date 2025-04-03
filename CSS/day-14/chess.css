@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+
+}
+.container{
+    height: 65vw;
+    width: 65vw;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    /* in above line we write 1fr 8 times for this we can use repeat function  */
+
+    grid-template-columns: repeat(8,1fr);  
+    /* here 8 is  number of times and 1fr is the value which wants to come 8 times,*/
+}
+.white{
+    background-color: white;
+}
+.black{
+    background-color: black;
+}

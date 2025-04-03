@@ -1,0 +1,23 @@
+1: Child property
+ 2: CSS color:
+ 1. Named color
+ 2. RGB color
+ 3. Hexadecimal Colors
+ 4. Alpha (transparent to opaque)
+ 5. HSL Colors
+ HSL stands for hue, saturation, and lightness. Hue is the
+ color type (a degree on the color wheel from 0 to 360),
+ saturation is the intensity of the color (0% is grayscale, 100%
+ is fully saturated), and lightness defines how light or dark the
+ color is (0% is black, 100% is white).
+ 6. background-color
+ background-size: cover; To cover entire element
+ background-repeat: no-repeat; Prevents the image from
+ repeating
+ 3: CSS fonts
+ 1. font-family
+ 2. Font-size
+ 10px
+ 2em
+ 3 rem
+ 120%

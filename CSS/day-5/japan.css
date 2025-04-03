@@ -1,0 +1,17 @@
+.circle{
+    background-color: red;
+    height: 40vw;
+    width:  40vw;
+    /* border-radius: 200px; */
+    border-radius:50%;
+    /*  here boder-radius is use in first case 200 px and in second case use 50%
+    as we can see in first case height is 400px  and width is 400px 
+    so making circle we use half of height and half of width  */
+    margin: auto;
+    /* margin auto  horizontaly chejo ko centre pe lake rkh deta hai  */
+    margin-top:40vw;
+    /*  as we know here height and widht are 60 %  of height if screen ie 60vh and vh 
+    so we have 100-60=40 so for align circle at centre we use margin 
+    top of 20 vh so from top it left 20 % of height 
+     */
+} 

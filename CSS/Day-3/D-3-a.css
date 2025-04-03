@@ -1,0 +1,22 @@
+h1{
+     font-size:10vw;
+     /* here 10vw(vew point width is the % of the width of website 
+     as the width of website is increases then size of font is alos increases and vice versa 
+     because the vw is some % of width of website   */
+     font-stretch:ultra-expanded;
+}
+li{
+    font-size: 10vh;
+    font-style:oblique;
+    font-variant:;
+}
+p{
+    line-height: 20px;
+    word-spacing:8px;
+    
+}
+li{
+    text-transform:uppercase;
+    /* text-transform: lowercase; */
+    font-stretch :inherit;
+}

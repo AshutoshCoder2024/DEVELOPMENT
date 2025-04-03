@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+   height: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: green;
+    font-size: 4rem;
+    border:1rem solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all;
+    transition-duration:4s;
+    transition-timing-function: linear;
+}
+.box:hover{
+
+
+         /*  translate */
+
+         /* transform: translate(400px); */
+         /* transform: translate(-400px); */
+         /* transform: translate(400px,300px); */
+         /* single translate a axis */
+         /* double value in translate Xaxis, Yaxis */
+         /* X-axis : positive: right ,else left */
+         /*  Y-axis :positive bottom else top  */
+
+
+
+         /* Scale() */
+
+         transform: scale(2); 
+         /* transform: scale(-2); decrese along x axis */
+         /* transform: scale(2,6); increse 2time along x axis and increse 6x along y axis  */
+
+
+
+         /* rotate */
+
+         /* transform: rotate(90deg);
+           positive clock wise
+           negative anti clock wise  
+        */
+
+
+
+        /* skew */
+
+        /* transform: skew(45deg ); tilts left side  */
+        /* transform: skew(-45deg); tilts right side  */
+
+
+        /* all in one  */
+       /* transform: translate(200px,10px) scale(1.5,2) rotate(45deg) skew(45deg) ; */
+
+
+       /* transform-origin */
+       /* transform-origin:  rotate(bottom,right);
+} */

@@ -1,0 +1,35 @@
+body{
+    background-color :rgba(23, 73, 117, 0.758);
+}
+/* .Card{
+    background-color: aqua;
+    border-width:5px;
+    border-style: solid;
+    border-color: green;
+    border-radius: 20px;
+    margin: 20px;
+    
+} */
+.Card{
+    background-color: aqua;
+    border: 5px green solid;
+    margin: 30px;
+    border-radius: 30px;
+    box-sizing: border-box;
+ }
+h1{
+    text-align: center;
+   
+}
+h3{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.Card:hover {
+    color: brown;
+    background-color:black ;
+   
+    
+}

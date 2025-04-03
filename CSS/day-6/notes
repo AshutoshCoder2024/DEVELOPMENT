@@ -1,0 +1,104 @@
+1: Position
+
+
+<!-- Static -->
+
+when we use Static position 
+As we know by default position  is static os in ststic position its postion doesnot change even if we chnage 
+
+
+
+<!-- Relative -->
+
+in relative position position of container is changes with respect to its original position 
+if we use top 10px them it down 10px from its original position 
+* relative position apna space(original  ) nhi chorta hai after modification  uska original space uske liye hu reserve rhega 
+
+
+
+
+<!-- Absolute -->
+
+*in absolute position its chnaged its position with respect to its parents position position 
+if its parents doents have any position then it chnages its position with respect to its grand parents position 
+
+*if its parents and grandparents have does not any parents then it chnage its p[osition ] with respect to viewpoint 
+*in absolute position it free its original space for othes 
+
+
+
+
+<!-- Fixed -->
+* when we use fixed position then its position is chnages with respect to viewpot 
+* In fixed position container does not change its position even we scrool the page 
+* in fixed position it leave its position for othres after modification 
+* In coder  army web site the header section is still view when we schroll our page down in my portfolio or about dsa page 
+position
+position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+
+
+
+
+<!-- Sticky -->
+Stickey position is like fixed but is stick only in his parents 
+whereas in fixed positinn container is fixed in entire page 
+
+
+
+
+
+<!-- 2: Z-index -->
+* ye wahi pe kam kreag jha pe position use ho 
+* static  wale pe kam nhi krega 
+* it is use when two box are overlap and whuch box we want to see 
+* it follw stack apporch on the basis of z-index 
+* That box whose value of z-index higher its show first then the second highest box show  
+* for all box by  default z-index is auto  
+
+
+
+
+
+
+
+
+<!-- 3: OverFlow: hidden, visible, scroll, auto -->
+
+* By default the overflow is visible in this extra overflow part show outside the container 
+  
+  <!-- overflow:visible  -->
+  in  visible  overflow extra  part show outside the container 
+
+
+ <!-- overflow:hidden  -->
+In this overflow extra content is hidden from the container 
+
+
+<!-- overflow:scroll -->
+in this overflow we get a scrool with the help of whuch we can see the whole content in the same caontainer 
+
+
+<!-- overflow:auto -->
+in this over flow if the the content is larger than the container the we get a scroll as scroll overflow 
+and is the contenet is is fit in container then we show full content 
+
+
+<!-- 4: float  and clear -->
+
+<!-- float -->
+ it use for shift the content left side or right side 
+ like 
+ float:left;
+ float:right;
+
+
+ <!-- clear -->
+ if we use clear:left and a img is already float left then the second img is place  at down of first img  
+ and 
+ if we use clear :right and a img a already right then it place down 
+
+ when we use clear:both then if there is a  float img  in left or  right then the image is place at down 

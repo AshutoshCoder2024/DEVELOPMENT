@@ -1,0 +1,27 @@
+h1{
+    font-size :2em;
+    /* here size of h1 fony is based on the size of font of 
+    parents (div,body tabel) */
+}
+
+h2{
+    font-size:5rem;
+    /* here size of h2 tag is based on the size of size of 
+    size of font of HTMl  */
+}
+
+section > p{
+    /* here now time to code is not change 
+    because it is pota for section 
+    and   */
+    font-size:3em;
+}
+section p{
+    /*  here both p are changed because here both are descendent of section  */
+    font-size: 5rem;
+}
+h3{
+    font-size: 500%;
+    /* here  size of font is based on parents size 
+      */
+}

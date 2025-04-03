@@ -1,0 +1,12 @@
+/* select by descemdent by parents to child
+here all descended(sub chid/ grand son  )  are modified   */
+section p{
+    color: red;
+}
+
+
+/* select by child 
+here only main child is modified not sub child of child not grand son only son   */
+section >p{
+    color: pink;
+} 

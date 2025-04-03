@@ -1,0 +1,54 @@
+/* Changing color by name  */
+h1{
+    color: red;
+}
+
+/* coloring by rgb colour  
+gere rgb can br 0-255  0-255   0-255 
+al*/
+
+h2{
+    color: rgb(27, 207, 14);
+}
+
+/* color by hexadecimal color  */
+p{
+    color: #52abd8;
+    /* any six  hexadecimal character */
+}
+h3{
+    /* color: hsl(hue, saturation, lightness); */
+    color: hsl(243, 80%, 40%);
+
+}
+
+/* using RGBA here a(alpha ) for tranparency  when we use 0 than it vary 
+light and diappear as we increase it its transparency increases  */
+h4{
+    color: rgba(56, 98, 214,0.2);
+}
+h5{
+    color: rgba(56, 98, 214,0.8);
+}
+
+
+
+/* BAckground Color
+body{
+    background-color:black;
+
+
+/*  for adding BackGround Imege  */
+body{
+    background-image:url(./R.jpeg);
+    background-size: cover;
+    /* it is use for adjust the background image into full image as
+     size of screen in show preview we can so three time 
+     but in full screen we can see only one  */
+
+
+     background-repeat: no-repeat;
+    /* by help of background repeat background image does not repeate 
+    in when we take small screen  */
+    /* if we does not use background repeate then our background image is repeate  */
+    } 

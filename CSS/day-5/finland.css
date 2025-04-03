@@ -1,0 +1,22 @@
+*{
+   margin: 0;
+    background-color: rgba(12, 12, 152, 0.997);
+}
+#first ,#third{
+    display: inline-block;
+    background-color: white;
+    height: 40vh;
+    width: 25vw;
+}
+#second ,#fourth{
+    display: inline-block;
+    background-color: white;
+    height: 40vh;
+    width: 52vw;
+}
+#first,#third{
+    margin-right:18vw ;
+}
+#third,#fourth{
+    margin-top:20vh;
+}

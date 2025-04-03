@@ -1,0 +1,34 @@
+/* select by class
+ here before class name dot (.) is required  */
+
+.first
+{
+    color: red;
+}
+
+/* 
+select by id 
+Here  before id name # is required  */
+#second
+{
+    background-color:color-mix(in hwb longer hue, color percentage, color percentage);
+}
+/* universal selector for select all tag  */
+#third{
+    color: pink;
+}
+/*  it is use to moify the whole page  */
+/* body{
+    background-color :cadetblue;
+} */
+
+
+/* this is use for change the whole tag which is inside the 
+body of that html file which is connected with this css file  */
+/* *{
+    color: red;
+    background-color: bisque;
+} */
+h1,p{
+    color: blue;
+}

@@ -1,0 +1,24 @@
+Flex Items
+
+1: order: The order property controls the visual order of flex items within
+ a flex container. Default: order: 0;
+
+ 2:flex-grow: The flex-grow property defines how much a flex item should 
+ grow relative to other items when extra space is available in the flex
+  container. Default: flex-grow: 0;
+
+3: flex-shrink: The flex-shrink property defines how much a flex item
+should shrink relative to other items when the container is too small 
+to fit all items at their initial size
+ Default:flex-shrink: 1;
+
+4: The flex-basis property sets the initial size of a flex item before any 
+extra space is distributed or the item is allowed to grow or shrink.
+ flex-basis: auto; (Uses the item's content size, or width/height 
+ if explicitly set.)
+
+5. align-self: The align-self property allows you to override the
+ align-items property for a specific flex item. This means each item
+ can have its own cross-axis alignment (e.g., vertical alignment if 
+ flex-direction: row), even if the container has a global alignment rule
+ 

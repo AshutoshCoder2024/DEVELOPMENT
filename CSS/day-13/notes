@@ -1,0 +1,53 @@
+Text Alignment and Direction
+ 1: text-align: left, right, center, justify
+ 2: direction: ltr , rtl
+ 3: unicode-bidi: bidi-override
+ 4: text-align-last: left, right, center, justify
+ 5: vertical-align: baseline,sub, super
+ Text Decoration
+ 1: text-decoration-line: overline; line-through;underline; overline
+ underline;
+ 2: text-decoration-color: red
+ 3: text-decoration-style
+ 4: text-decoration-thickness
+ Text Transformation
+ 1: text-transform: uppercase, lowercase, capitalize
+ Text Spacing
+ 1: text-indent
+ 2: letter-spacing
+ 3: line-height
+ 4: word-spacing
+ 5: white-space
+ Text Shadow
+Box Shadow:
+ box-shadow: h-offset v-offset blur-radius spread-radius color;
+ h-offset: Horizontal offset of the shadow (positive values
+ move the shadow to the right, negative values to the left).
+ ● v-offset: Vertical offset of the shadow (positive values move
+ the shadow down, negative values up).
+ ● blur-radius: The blur radius (how much the shadow should
+ be blurred). The higher the number, the more blurred the
+ shadow is.
+ ● spread-radius: This value expands or contracts the size of
+ the shadow. Positive values cause the shadow to expand,
+ while negative values cause it to shrink.
+ ● color: The color of the shadow. You can use color names,
+ HEX, RGB, or RGBA values.
+ Inset
+Transition
+ transition: property duration timing-function delay;
+ property: The CSS property you want to animate (e.g.,
+ background-color, width, opacity, etc.). You can use all
+ to apply transitions to all animatable properties.
+ duration: The time it takes for the transition to complete (e.g., 2s,
+ 500ms).
+ timing-function: A function that describes how the transition
+ progresses over its duration. Common values include:
+ ● linear: The transition has a constant speed.
+ ● ease: The transition starts slow, speeds up, and then slows
+ down.
+ ● ease-in: The transition starts slow and then speeds up.
+ ● ease-out: The transition starts fast and then slows down.
+ ● ease-in-out: The transition starts slow, speeds up, and
+ then slows down again.
+ delay: The time to wait before starting the transition (e.g., 1s).

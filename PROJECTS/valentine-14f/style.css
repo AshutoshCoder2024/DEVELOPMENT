@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background-color: #D98B8B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Romantic Gradient Background Animation */
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #ff6666, #ff9999, #ffcccc);
+    animation: backgroundGlow 6s infinite alternate ease-in-out;
+}
+
+@keyframes backgroundGlow {
+    0% { filter: brightness(1); }
+    100% { filter: brightness(1.2); }
+}
+
+/* Proposal Card */
+.proposal-card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    color: #FFCCCC;
+    box-shadow: 0px 10px 30px rgba(255, 0, 0, 0.3);
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+}
+
+.proposal-card h1 {
+    font-size: 24px;
+    font-family: 'Pacifico', cursive;
+}
+
+.message-box {
+    background: #fbe4d8;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    position: relative;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.message-box.fade {
+    opacity: 0;
+}
+
+/* Floating Hearts */
+.hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensure hearts don't interfere with clicks */
+}
+
+.heart {
+    position: absolute;
+    font-size: 20px;
+    color: #ff4d4d;
+    animation: float 6s linear infinite;
+    bottom: -100px; /* Start from below the screen */
+}
+
+@keyframes float {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    100% { transform: translateY(-100vh) scale(0.5); opacity: 0; }
+}
+
+/* Sparkle Animation */
+.sparkles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensure sparkles don't interfere with clicks */
+}
+
+.sparkle {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    animation: sparkleFloat 6s infinite ease-in-out;
+}
+
+@keyframes sparkleFloat {
+    0% { transform: translateY(0); opacity: 0.6; }
+    50% { transform: translateY(-200px); opacity: 0.3; }
+    100% { transform: translateY(-400px); opacity: 0; }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .proposal-card {
+        width: 95%;
+        padding: 20px;
+    }
+}

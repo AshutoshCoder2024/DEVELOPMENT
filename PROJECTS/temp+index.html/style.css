@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    background-color: #D98B8B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Romantic Gradient Background Animation */
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #ff6666, #ff9999, #ffcccc);
+    animation: backgroundGlow 6s infinite alternate ease-in-out;
+}
+
+@keyframes backgroundGlow {
+    0% { filter: brightness(1); }
+    100% { filter: brightness(1.2); }
+}
+
+/* Romantic Overlay */
+.romantic-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 102, 102, 0.3), rgba(255, 153, 153, 0.3), rgba(255, 204, 204, 0.3));
+    animation: overlayPulse 8s infinite alternate ease-in-out;
+}
+
+@keyframes overlayPulse {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Proposal Card */
+.proposal-card {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    color: #FFCCCC;
+    box-shadow: 0px 10px 30px rgba(255, 0, 0, 0.3);
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.proposal-card.hide {
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none; /* Disable interactions when hidden */
+}
+
+.proposal-card h1 {
+    font-size: 24px;
+    font-family: 'Pacifico', cursive;
+}
+
+.message-box {
+    background: #fbe4d8;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    position: relative;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.message-box.fade {
+    opacity: 0;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px;
+    position: relative; /* Ensure buttons are positioned relative to this container */
+    max-width: 100%; /* Prevent buttons from overflowing */
+    max-height: 100%; /* Prevent buttons from overflowing */
+}
+
+button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+    background: #ff1a1a;
+    transform: scale(1.1);
+}
+
+#noButton {
+    position: static; /* Reset to default positioning */
+}
+
+/* Floating Hearts */
+.hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensure hearts don't interfere with clicks */
+}
+
+.heart {
+    position: absolute;
+    font-size: 20px;
+    color: #ff4d4d;
+    animation: float 6s linear infinite;
+    bottom: -100px; /* Start from below the screen */
+}
+
+@keyframes float {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    100% { transform: translateY(-100vh) scale(0.5); opacity: 0; }
+}
+
+/* Sparkle Animation */
+.sparkles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Ensure sparkles don't interfere with clicks */
+}
+
+.sparkle {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    animation: sparkleFloat 6s infinite ease-in-out;
+}
+
+@keyframes sparkleFloat {
+    0% { transform: translateY(0); opacity: 0.6; }
+    50% { transform: translateY(-200px); opacity: 0.3; }
+    100% { transform: translateY(-400px); opacity: 0; }
+}
+
+/* Heart-Shaped Confetti */
+.confetti {
+    position: absolute;
+    font-size: 20px;
+    color: #ff4d4d;
+    animation: confettiFall 5s linear infinite;
+}
+
+@keyframes confettiFall {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(720deg); }
+}
+
+/* Heart Fireworks */
+.firework {
+    position: absolute;
+    font-size: 30px;
+    color: #ff4d4d;
+    animation: explode 1.5s ease-out infinite;
+}
+
+@keyframes explode {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(10); opacity: 0; }
+}
+
+/* Glowing Text */
+.glowing-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-family: 'Pacifico', cursive;
+    color: #ff4d4d;
+    text-shadow: 0 0 10px #ff4d4d, 0 0 20px #ff4d4d, 0 0 30px #ff4d4d;
+    animation: glow 2s infinite alternate;
+    z-index: 1000; /* Ensure it appears above everything */
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 10px #ff4d4d, 0 0 20px #ff4d4d, 0 0 30px #ff4d4d; }
+    100% { text-shadow: 0 0 20px #ff4d4d, 0 0 40px #ff4d4d, 0 0 60px #ff4d4d; }
+}
+
+/* Romantic Message */
+.romantic-message {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    text-align: center;
+    animation: fadeInOut 5s ease-in-out;
+    z-index: 1000; /* Ensure it appears above everything */
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .proposal-card {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .proposal-card h1 {
+        font-size: 20px;
+    }
+
+    .message-box {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .glowing-text {
+        font-size: 36px; /* Smaller font size for phones */
+    }
+
+    .romantic-message {
+        font-size: 18px; /* Smaller font size for phones */
+    }
+}

@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Orbit{
+    height: 600px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+
+.Sunimg{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+}
+.Orbital1{
+    position: absolute;
+    height: 239px;
+    width: 239px;
+    border: 0.1px dashed white;
+    border-radius: 50%;
+}
+.Mercury{
+    position:absolute;
+    animation-name: Mercury;
+    animation-duration:8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    .Mercuryimg{
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+    }
+}
+@keyframes Mercury{
+      from{
+        transform: rotate(0deg) translate(120px) rotate(0deg);
+    }
+    to{
+       transform: rotate(360deg) translate(120px) rotate(-360deg);
+    }
+}
+.Orbital2{
+    position:absolute;
+    height:380px;
+    width: 380px;
+    border: 0.1px dashed white;
+    border-radius:50%;
+}
+.Venus{
+   position: absolute;
+   animation-name: Venus;
+   animation-duration:8.3s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+.Venusimg{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+}
+}
+@keyframes Venus {
+    from{
+        transform: rotate(0deg) translate(190px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(190px) rotate(-360deg);
+    }
+}
+.Orbital3{
+    position: absolute;
+    height:540px;
+    width: 540px;
+    border: 1px dashed white;
+    border-radius: 50%;
+}
+.Earth{
+    position:absolute;
+    .Earthimg{
+     height: 80px;
+     width: 80px;
+    }
+    animation-name: Earth;
+    animation-duration:8.7s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+
+}
+@keyframes Earth {
+    from{
+        transform: rotate(0deg) translate(270px) rotate(0deg);
+    }
+    to{
+
+        transform: rotate(360deg) translate(270px) rotate(-360deg);
+    }
+}
+
+.Orbital4{
+    position: absolute;
+    height:700px;
+    width: 700px;
+    border: 1px dashed white;
+    border-radius: 50%;
+}
+.Mars{
+    position:absolute;
+    .Marsimg{
+     height: 60px;
+     width: 60;
+    }
+    animation-name: Mars;
+    animation-duration:8s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+@keyframes Mars{
+    from{
+        transform: rotate(0deg) translate(350px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(350px) rotate(-360deg);
+    }
+}
+
+.Orbital5{
+    position: absolute;
+    height:880px;
+    width:880px;
+    border: 1px dashed white;
+    border-radius: 50%;
+}
+.Jupiter{
+    position:absolute;
+    .Jupiterimg{
+     height: 90px;
+     width:90px;
+    }
+    animation-name: Jupiter;
+    animation-duration:9.2s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+@keyframes Jupiter{
+    from{
+        transform: rotate(0deg) translate(430px);
+    }
+    to{
+        transform: rotate(360deg) translate(430px);
+    }
+}
+.Orbital6{
+    position: absolute;
+    height:1050px;
+    width: 1050px;
+    border: 1px dashed white;
+    border-radius: 50%;
+}
+.Saturn{
+    position:absolute;
+    .Saturnimg{
+     height:80px;
+     width: 80px;
+    }
+    animation-name: Saturn;
+    animation-duration:9.8s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+@keyframes Saturn{
+    from{
+        transform: rotate(0deg) translate(530px) rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) translate(530px) rotate(-360deg);
+    }
+}
+.Orbital7{
+    position: absolute;
+    height:1255px;
+    width: 1255px;
+    border: 1px dashed white;
+    border-radius: 50%;
+}
+.Uranus{
+    position:absolute;
+    .Uranusimg{
+     height: 50px;
+     width: 50px;
+    }
+    animation-name:Uranus;
+    animation-duration:10.2s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+@keyframes Uranus{
+    from{
+        transform: rotate(0deg) translate(630px);
+    }
+    to{
+        transform: rotate(360deg) translate(630px);
+    }
+}
+.Orbital8{
+    position: absolute;
+    height:1400px;
+    width: 1400px;
+    border: 1px dashed white;
+    border-radius: 50%;
+}
+.Neptune{
+    position:absolute;
+    .Neptuneimg{
+     height: 50px;
+     width: 50;
+    }
+    animation-name: Neptune;
+    animation-duration:10.9s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+@keyframes Neptune{
+    from{
+        transform: rotate(0deg) translate(700px);
+    }
+    to{
+        transform: rotate(360deg) translate(700px);
+    }
+}
+
+
